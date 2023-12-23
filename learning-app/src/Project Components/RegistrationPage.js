@@ -1,10 +1,12 @@
 import React, { useState } from 'react';
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
+import Dropdown from 'react-bootstrap/Dropdown';
 
 export default function RegistrationPage() {
    
     const [formData, setFormData] = useState({
+        Type : '',
         FirstName: '',
         LastName: '',
         MobileNumber: '',
@@ -41,6 +43,12 @@ export default function RegistrationPage() {
         <div class="row justify-content-md-center p-5">
            <div class="col-md-4 col-md-offset-6 border border-black border-5 rounded">
            <Form className="sm-3 center p-4" onSubmit={handleSubmit}>
+            <Form.Group className="mb-3 row">
+            <Form.Select name="Type" value={formData.Type} onChange={handleInputChange}>
+                <option>admin</option>
+                <option>user</option>
+            </Form.Select>
+            </Form.Group>
            <Form.Group className="mb-3 row">
             <Form.Control
              type='text'  
