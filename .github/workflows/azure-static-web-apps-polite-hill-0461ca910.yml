@@ -14,5 +14,5 @@
     action: "upload"
     app_location: "./fundamentals-app"
     api_location: ""
-    output_location: "build"   # <-- use build for CRA, dist for Vite
+    output_location: "dist"   # <-- use build for CRA, dist for Vite
     github_id_token: ${{ steps.idtoken.outputs.result }}
