@@ -40,3 +40,86 @@
 .read-the-docs {
   color: #888;
 }
+
+/* Product List Styles */
+.product-list {
+  margin: 2em auto;
+  padding: 1.5em;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  max-width: 400px;
+}
+
+.product-list h2 {
+  margin-bottom: 1em;
+  color: #646cff;
+}
+
+.product-list ul {
+  list-style: none;
+  padding: 0;
+}
+
+.product-list li {
+  padding: 0.75em 0;
+  border-bottom: 1px solid #eee;
+  font-size: 1.1em;
+}
+
+.product-list li:last-child {
+  border-bottom: none;
+}
+
+form {
+  margin: 2em auto;
+  padding: 2em;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(107, 106, 106, 0.08);
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+form input[type="email"] {
+  padding: 0.5em 1em;
+  border: 2px solid #61dafb;
+  border-radius: 6px;
+  font-size: 1em;
+  margin: 1em 0;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+form input[type="email"]:focus {
+  border-color: #646cff;
+}
+
+form button[type="submit"] {
+  padding: 0.5em 1.5em;
+  background: #757b7c;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+form button[type="submit"]:hover {
+  background: #c2c3ca;
+}
+
+input[type="text"] {
+  padding: 0.5em 1em;
+  border: 2px solid #61dafb;
+  border-radius: 6px;
+  font-size: 1em;
+  margin: 1em 0;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+input[type="text"]:focus {
+  border-color: #646cff;
+}
