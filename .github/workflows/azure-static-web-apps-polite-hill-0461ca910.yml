@@ -37,10 +37,9 @@ jobs:
         with:
           azure_static_web_apps_api_token: ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN_POLITE_HILL_0461CA910 }}
           action: "upload"
-          app_location: "./fundamentals-app" # App source code path
-          api_location: "" # Api source code path - optional
-          output_location: "dist" # Vite output folder
-          github_id_token: ${{ steps.idtoken.outputs.result }}
+          app_location: "./fundamentals-app"   # points to your Vite app
+          api_location: ""                     # optional (no API here)
+          output_location: "dist"              # where vite outputs build files
 
   close_pull_request_job:
     if: github.event_name == 'pull_request' && github.event.action == 'closed'
