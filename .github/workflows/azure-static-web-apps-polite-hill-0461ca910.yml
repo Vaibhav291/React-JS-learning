@@ -31,15 +31,19 @@ jobs:
         run: npm run build
         working-directory: ./fundamentals-app
 
+      # ✅ Debug step: show contents of dist folder
+      - name: Show dist folder
+        run: ls -la ./fundamentals-app/dist || echo "dist folder not found"
+
       - name: Build And Deploy
         id: builddeploy
         uses: Azure/static-web-apps-deploy@v1
         with:
           azure_static_web_apps_api_token: ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN_POLITE_HILL_0461CA910 }}
           action: "upload"
-          app_location: "./fundamentals-app"   # points to your Vite app
-          api_location: ""                     # optional (no API here)
-          output_location: "dist"              # where vite outputs build files
+          app_location: "./fundamentals-app"
+          api_location: ""
+          output_location: "dist"
 
   close_pull_request_job:
     if: github.event_name == 'pull_request' && github.event.action == 'closed'
