@@ -39,11 +39,7 @@ jobs:
           action: "upload"
           app_location: "./fundamentals-app"   # points to your Vite app
           api_location: ""                     # optional (no API here)
-<<<<<<< HEAD
-          output_location: "dist"                  # where vite outputs build files
-=======
           output_location: "dist"              # where vite outputs build files
->>>>>>> c85e49cd2398098b8110da7d9016d48fc4bb870c
 
   close_pull_request_job:
     if: github.event_name == 'pull_request' && github.event.action == 'closed'
