@@ -6,6 +6,7 @@ import UserInput from './Components/UserInput'
 import UserForm from './Components/UserForm'
 import ProductList from './Components/ProductList'
 import Timer from './Components/Timer'
+import ThemedButton from './Components/ThemedButton'
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
       <UserForm/>
       <ProductList/>
       <Timer />
+      <ThemedButton />
     </div>
   )
 }
