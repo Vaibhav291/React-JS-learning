@@ -8,6 +8,7 @@ import ProductList from './Components/ProductList'
 import Timer from './Components/Timer'
 import ThemeContext from './Components/ThemedButton'
 import FocusInput from './Components/FocusInput'
+import ReducerComponent from './Components/reducer';
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
       <Timer />
       <ThemeContext />
       <FocusInput />
+      <ReducerComponent/>
     </div>
   )
 }
