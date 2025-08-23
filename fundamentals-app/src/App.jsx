@@ -5,6 +5,7 @@ import Counter from './Components/Counter'
 import UserInput from './Components/UserInput'
 import UserForm from './Components/UserForm'
 import ProductList from './Components/ProductList'
+import Timer from './Components/Timer'
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <UserInput/>
       <UserForm/>
       <ProductList/>
+      <Timer />
     </div>
   )
 }
