@@ -6,7 +6,8 @@ import UserInput from './Components/UserInput'
 import UserForm from './Components/UserForm'
 import ProductList from './Components/ProductList'
 import Timer from './Components/Timer'
-import ThemedButton from './Components/ThemedButton'
+import ThemeContext from './Components/ThemedButton'
+import FocusInput from './Components/FocusInput'
 
 function App() {
   return (
@@ -17,7 +18,8 @@ function App() {
       <UserForm/>
       <ProductList/>
       <Timer />
-      <ThemedButton />
+      <ThemeContext />
+      <FocusInput />
     </div>
   )
 }
